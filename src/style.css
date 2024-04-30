@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #fff9f4;
+  --secondary-color: #c99a8f;
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -18,30 +23,70 @@ body {
   background-repeat: no-repeat;
 }
 
+nav {
+  border-bottom: var(--secondary-color) solid 0.5px;
+  margin: -30px 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+}
+
+nav li.active a {
+  color: var(--secondary-color);
+}
+
+nav li.active a:hover {
+  font-style: normal;
+}
+
+nav a {
+  font-family: "amandine", sans-serif;
+  color: var(--primary-color);
+  margin-right: 40px;
+}
+
+nav a:hover {
+  font-style: italic;
+  cursor: pointer;
+}
+
+.logo {
+  color: var(--primary-color);
+  text-align: left;
+  font-family: "amandine", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 6.4px;
+  margin-left: 40px;
+}
+
 h1 {
-  color: #fff9f4;
+  color: var(--primary-color);
   text-align: center;
-  font-family: "lust-sans", sans-serif;
-  font-size: 72px;
+  font-family: "amandine", sans-serif;
+  font-size: 80px;
   font-style: normal;
   font-weight: 200;
-  line-height: normal;
+  line-height: 1;
   letter-spacing: 7.2px;
 }
 
 h2 {
-  color: #c99a8f;
+  color: var(--secondary-color);
   text-align: center;
-  font-family: "lust-sans", sans-serif;
+  font-family: "amandine", sans-serif;
   font-weight: 200;
   font-style: italic;
   font-size: 40px;
-  line-height: normal;
+  line-height: 1;
   letter-spacing: 4px;
 }
 
 .description {
-  color: #fff9f4;
+  color: var(--primary-color);
   text-align: left;
   font-family: "Profile Pro";
   font-size: 24px;
@@ -57,17 +102,17 @@ h2 {
 }
 
 hr {
-  background-color: #fff9f4;
+  background-color: var(--primary-color);
   opacity: 60%;
 }
 
 a {
-  color: #fff9f4;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #fff9f4;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -76,8 +121,8 @@ a:hover {
 }
 
 .main-navigation {
-  color: #fff9f4;
-  font-family: "lust-sans", sans-serif;
+  color: var(--primary-color);
+  font-family: "amandine", sans-serif;
   font-size: 6em;
   font-style: normal;
   font-weight: 300;
@@ -88,7 +133,7 @@ a:hover {
 }
 
 .main-navigation:hover {
-  font-family: "lust-sans", sans-serif;
+  font-family: "amandine", sans-serif;
   font-style: italic;
   cursor: pointer;
 }
@@ -107,9 +152,9 @@ a:hover {
 footer {
   display: block;
   margin: 0 auto;
-  border-top: #c99a8f solid 1px;
+  border-top: var(--secondary-color) solid 1px;
   height: 60px;
-  color: #c99a8f;
+  color: var(--secondary-color);
   padding-top: 15px;
   width: 90%;
   margin-top: auto;
@@ -120,7 +165,7 @@ footer {
 }
 
 .border-primary {
-  border-color: #c99a8f !important;
+  border-color: var(--secondary-color) !important;
 }
 
 @media (max-width: 1600px) {
@@ -146,8 +191,8 @@ footer {
 
 @media (max-width: 768px) {
   h1 {
-    padding-top: 100px;
-    font-size: 60px;
+    padding-top: 50px;
+    font-size: 70px;
   }
 
   h2 {
@@ -188,7 +233,7 @@ footer {
 @media (max-width: 576px) {
   h1 {
     padding-top: 10px;
-    font-size: 40px;
+    font-size: 50px;
   }
 
   h2 {
