@@ -1,13 +1,15 @@
 body {
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   width: 100%;
   text-align: center;
   padding-top: 50px;
-  overflow: hidden;
   background: radial-gradient(
       50% 50% at 50% 50%,
-      rgba(20, 73, 72, 0.8) 0%,
-      rgba(14, 53, 52, 0.8) 100%
+      rgba(20, 73, 72, 0.7) 0%,
+      rgba(14, 53, 52, 0.7) 100%
     ),
     url(/images/nour-cats-grainy.png);
   background-attachment: fixed;
@@ -31,9 +33,9 @@ h2 {
   color: #c99a8f;
   text-align: center;
   font-family: "lust-sans", sans-serif;
-  font-size: 40px;
-  font-style: normal;
   font-weight: 200;
+  font-style: italic;
+  font-size: 40px;
   line-height: normal;
   letter-spacing: 4px;
 }
@@ -44,15 +46,33 @@ h2 {
   font-family: "Profile Pro";
   font-size: 24px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   height: 100%;
   padding: 25px;
   padding-left: 15%;
 }
 
+.description-highlights {
+  font-style: italic;
+}
+
 hr {
   background-color: #fff9f4;
   opacity: 60%;
+}
+
+a {
+  color: #fff9f4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff9f4;
+  text-decoration: none;
+}
+
+.main-navigation-block {
+  margin-bottom: 80px;
 }
 
 .main-navigation {
@@ -77,11 +97,22 @@ hr {
   height: 200px;
 }
 
-.footer {
-  height: 50px;
-  margin: 0 40px;
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer {
+  display: block;
+  margin: 0 auto;
+  border-top: #c99a8f solid 1px;
+  height: 60px;
   color: #c99a8f;
-  padding: 10px;
+  padding-top: 15px;
+  width: 90%;
+  margin-top: auto;
 }
 
 .footer-element {
@@ -108,9 +139,8 @@ hr {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 992px) {
   .blank-space {
-    height: 200px;
   }
 }
 
@@ -166,7 +196,7 @@ hr {
   }
 
   .blank-space {
-    height: 50px;
+    height: 15px;
   }
 
   .description {
@@ -179,6 +209,10 @@ hr {
   hr {
     margin-top: 20px;
     width: 40%;
+  }
+
+  .main-navigation-block {
+    margin-bottom: 0;
   }
 
   .main-navigation {
@@ -197,5 +231,24 @@ hr {
   hr {
     width: 60%;
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .description {
+    text-align: center;
+    justify-content: center;
+    margin: 0 50px;
+    padding-left: 0;
+  }
+
+  hr {
+    margin-top: 20px;
+    width: 40%;
+    margin-left: auto;
+  }
+
+  .main-navigation {
+    padding-right: 0;
   }
 }
