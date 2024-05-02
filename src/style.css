@@ -25,7 +25,7 @@ body {
 
 nav {
   border-bottom: var(--secondary-color) solid 0.5px;
-  margin: -30px 0;
+  margin: 10px 80px 0;
 }
 
 nav li {
@@ -48,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-  font-style: italic;
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -60,7 +60,15 @@ nav a:hover {
   font-style: normal;
   font-weight: 500;
   letter-spacing: 6.4px;
-  margin-left: 40px;
+  margin-left: 80px;
+}
+
+.navbar-toggler {
+  border-color: var(--secondary-color);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 249, 244)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 h1 {
@@ -116,7 +124,7 @@ a:hover {
   text-decoration: none;
 }
 
-.main-navigation-block {
+.body-homepage {
   margin-bottom: 80px;
 }
 
@@ -152,7 +160,7 @@ a:hover {
 footer {
   display: block;
   margin: 0 auto;
-  border-top: var(--secondary-color) solid 1px;
+  border-top: var(--secondary-color) solid 0.5px;
   height: 60px;
   color: var(--secondary-color);
   padding-top: 15px;
@@ -164,13 +172,21 @@ footer {
   padding: 4px;
 }
 
+.footer-link {
+  color: var(--secondary-color);
+}
+
+.footer-link:hover {
+  cursor: pointer;
+}
+
 .border-primary {
   border-color: var(--secondary-color) !important;
 }
 
 @media (max-width: 1600px) {
   .blank-space {
-    height: 80px;
+    height: 60px;
   }
 
   .description {
@@ -179,7 +195,7 @@ footer {
   }
 
   .main-navigation {
-    font-size: 4em;
+    font-size: 5em;
     padding-right: 8%;
   }
 }
