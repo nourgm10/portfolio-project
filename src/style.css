@@ -295,7 +295,7 @@ footer {
 
 @media (min-width: 992px) {
   #homepage main {
-    margin-top: 8%;
+    margin-top: 4%;
   }
 
   hr {
@@ -311,7 +311,7 @@ footer {
   }
 
   .main-navigation {
-    font-size: 5.5em;
+    font-size: 5em;
     padding-right: 8%;
     padding-left: 8%;
     margin-right: 60px;
@@ -338,7 +338,7 @@ footer {
   }
 
   #homepage main {
-    margin-top: 8%;
+    margin-top: 4%;
   }
 
   h1 {
