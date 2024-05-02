@@ -27,8 +27,163 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Nour's Projects</title>
   </head>
-  <body>
-    <h1>Hello World</h1>
+  <body id="projects-page">
+    <head>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand logo" href="#">NG</a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-3">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </head>
+
+    <main>
+      <div class="container">
+        <h1>Front-end projects</h1>
+        <div class="row websites align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="/images/weather.png"
+              class="img-fluid shadow w-auto projects-images"
+              alt="weather app"
+            />
+          </div>
+          <div class="col-lg-6 app-description-1">
+            <h2 class="website-title ms-4">Weather app</h2>
+            <p class="m-4">
+              This website is my very first solo project from start to finish,
+              including the design and code. I wanted to challenge myself right
+              out of the gate by incorporating interesting, minimalist and
+              modern design trends like neumorphism. Along the way, I picked up
+              skills in HTML, CSS, JavaScript, and even learned how to integrate
+              APIs. Now, with this desktop app, anyone can easily check the
+              5-day weather forecast for any city in the world.
+            </p>
+            <a href="https://nours-weather-app.netlify.app/" target="_blank"
+              ><button
+                class="btn btn-purple shadow mt-4 pt-3 pb-3"
+                title="launch weather app"
+              >
+                Launch weather app
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div class="row websites align-items-center">
+          <div class="col-lg-6 app-description-2">
+            <h2 class="website-title pb-3">World clock app</h2>
+            <p class="pb-3">
+              This second project slightly resembles the first, but I delved
+              deeper into experimenting with diverse design trends.
+              Additionally, I incorporated features such as date formatting and
+              timezone functionality, enabling users to determine the current
+              time in any city from a dropdown menu. Through working on this
+              project, I refined my proficiency in HTML, CSS, and JavaScript,
+              reinforcing and enhancing my understanding of these languages.
+            </p>
+            <a href="https://nours-world-clock.netlify.app/" target="_blank"
+              ><button
+                class="btn btn-purple shadow pt-3 pb-3"
+                title="launch world clock app"
+              >
+                Launch world clock app
+              </button></a
+            >
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="/images/world-clock.png"
+              alt="world clock app"
+              class="img-fluid shadow w-auto projects-images"
+            />
+          </div>
+        </div>
+
+        <div class="row websites align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="/images/ai-recipe-generator.png"
+              alt="AI recipe generator"
+              class="img-fluid shadow w-auto projects-images"
+            />
+          </div>
+          <div class="col-lg-6 app-description-1">
+            <h2 class="website-title ms-4">AI recipe generator</h2>
+            <p class="m-4">
+              This project was a game-changer for my coding skills. It wasn't
+              just about getting better at coding; it was also about diving into
+              the realm of AI APIs, which has been the highlight of my coding
+              journey so far! I created a recipe generator that allows users to
+              quickly create dishes., using ingredients they have and their
+              preferences. I'm eager to keep tweaking it and turn it into a
+              go-to tool for everyday cooking adventures.
+            </p>
+            <a
+              href="https://detailed-recipe-generator.netlify.app/"
+              target="_blank"
+              ><button
+                class="btn btn-purple shadow pt-3 pb-3"
+                title="launch ai recipe generator"
+              >
+                Launch AI recipe generator
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div class="row websites align-items-center">
+          <div class="col-lg-6 app-description-2">
+            <h2 class="website-title pb-3">Cat joke generator</h2>
+            <p class="pb-3">
+              Finally, this was a very quick little project, which served as my
+              initial exploration into integrating AI APIs to develop the recipe
+              generator. As a life-long cat lover, it was an enjoyable little
+              venture, despite the jokes not being the pinnacle of humor.
+            </p>
+            <button
+              class="btn btn-purple shadow pt-3 pb-3"
+              type="submit"
+              title="go to sourdough website"
+            >
+              Launch cat joke generator
+            </button>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="/images/cat-joke-generator.png"
+              alt="sourdough website"
+              class="img-fluid shadow w-auto projects-images"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer>
       <span class="footer-element">
