@@ -25,8 +25,7 @@ body {
 
 nav {
   border-bottom: var(--secondary-color) solid 0.5px;
-  margin: 10px 80px 0;
-  margin: 0 auto;
+  margin: 10px 40px 0;
 }
 
 nav li {
@@ -98,6 +97,10 @@ h1.about-title {
   font-size: 60px;
 }
 
+#homepage header {
+  margin-top: 30px;
+}
+
 .description {
   color: var(--primary-color);
   text-align: left;
@@ -151,10 +154,6 @@ a:hover {
   cursor: pointer;
 }
 
-.blank-space {
-  height: 200px;
-}
-
 .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -194,77 +193,50 @@ footer {
   padding: 0 100px;
 }
 
-@media (max-width: 1600px) {
-  .blank-space {
-    height: 60px;
-  }
-
-  .description {
-    font-size: 18px;
-    padding-left: 8%;
-  }
-
-  .main-navigation {
-    font-size: 5em;
-    padding-right: 8%;
-  }
-}
-
 @media (min-width: 992px) {
-  .blank-space {
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    padding-top: 50px;
-    font-size: 70px;
+  #homepage main {
+    margin-top: 8%;
   }
 
-  h1.about-title {
-    font-size: 50px;
-  }
-
-  h2 {
-    font-size: 48px;
-  }
-
-  .blank-space {
-    height: 50px;
-  }
-
-  .description {
-    font-size: 14px;
-    text-align: center;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .about-section {
-    margin-top: 30px;
-  }
-
-  hr {
-    margin-top: 20px;
-    width: 40%;
-  }
-
-  .main-navigation {
-    margin: 30px 0 0 0;
-    font-size: 3em;
-    padding-right: 0;
-  }
-}
-
-@media (min-width: 768px) {
   hr {
     width: 60%;
     margin-left: 0;
     margin-top: 30px;
   }
+
+  .description {
+    font-size: 1.2em;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .main-navigation {
+    font-size: 5.5em;
+    padding-right: 8%;
+    padding-left: 8%;
+    margin-right: 60px;
+  }
+
+  h1.about-title {
+    font-size: 50px;
+    padding-top: 30px;
+  }
+
+  div.row.align-items-center.about-section {
+    padding: 0 50px;
+    margin-top: 100px;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
+  #homepage header {
+    margin-top: 10px;
+  }
+
+  #homepage main {
+    margin-top: 8%;
+  }
+
   h1 {
     padding-top: 20px;
     font-size: 50px;
@@ -279,18 +251,16 @@ footer {
     font-size: 24px;
   }
 
-  .blank-space {
-    height: 15px;
-  }
-
   .description {
     font-size: 14px;
     text-align: center;
     justify-content: center;
-    margin: 0 50px;
+    margin: 0 100px 40px;
+    padding: 0;
   }
 
   .about-section {
+    margin-top: 30px;
     width: 100%;
     padding-top: 20px;
     padding-left: 10%;
@@ -300,6 +270,7 @@ footer {
   hr {
     margin-top: 20px;
     width: 40%;
+    margin-left: auto;
   }
 
   .main-navigation-block {
@@ -308,7 +279,7 @@ footer {
 
   .main-navigation {
     margin: 30px 0 0 0;
-    font-size: 2em;
+    font-size: 3em;
     padding-right: 0;
   }
 
@@ -316,30 +287,46 @@ footer {
     font-family: "lust-sans", sans-serif;
     font-style: italic;
   }
-}
 
-@media (min-width: 576px) {
-  hr {
-    width: 60%;
-    margin-top: 30px;
+  nav {
+    margin: 0;
+  }
+
+  a.navbar-brand.logo {
+    margin-left: 60px;
+    padding-bottom: 0;
+  }
+
+  button.navbar-toggler.custom-toggler {
+    margin-right: 40px;
+  }
+
+  nav.navbar.navbar-expand-lg {
+    padding: 0;
+  }
+
+  a.nav-link {
+    margin: 0 30px;
+    text-align: right;
   }
 }
 
-@media (max-width: 992px) {
-  .description {
-    text-align: center;
-    justify-content: center;
-    margin: 0 50px;
-    padding-left: 0;
+@media (max-width: 576px) {
+  #homepage header {
+    margin-top: 10px;
   }
 
-  hr {
-    margin-top: 20px;
-    width: 40%;
-    margin-left: auto;
+  #homepage main {
+    margin-top: 7%;
+  }
+
+  h1 {
+    font-size: 45px;
   }
 
   .main-navigation {
+    margin: 10px 0 0 0;
+    font-size: 3em;
     padding-right: 0;
   }
 }
