@@ -24,6 +24,9 @@ body {
   background-repeat: no-repeat;
 }
 
+#homepage head {
+}
+
 nav {
   border-bottom: var(--secondary-color) solid 0.5px;
   margin: 10px 40px 0;
@@ -66,6 +69,7 @@ nav a:hover {
 
 .navbar-toggler {
   border-color: var(--secondary-color);
+  margin: 20px 0;
 }
 
 .navbar-toggler-icon {
@@ -81,6 +85,10 @@ h1 {
   font-weight: 200;
   line-height: 1;
   letter-spacing: 7.2px;
+}
+
+h1.about-title {
+  font-size: 60px;
 }
 
 h2 {
@@ -102,12 +110,27 @@ h2 {
   font-weight: 400;
 }
 
-h1.about-title {
-  font-size: 60px;
+h3 {
+  color: var(--secondary-color);
+  font-family: "Profile Pro", sans-serif;
+  font-size: 30px;
+  font-style: bold;
+  line-height: 1;
+  letter-spacing: 7.2px;
+}
+
+#contact-page p {
+  color: var(--primary-color);
+  font-family: "amandine", sans-serif;
+}
+
+#contact-page p:hover {
+  font-style: italic;
+  cursor: pointer;
 }
 
 #homepage header {
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 .description {
@@ -252,12 +275,25 @@ footer {
   border-radius: 10px;
 }
 
-#projects-page h1 {
+#projects-page h1,
+#contact-page h1 {
   margin: 7%;
 }
 
 #projects-page h2 {
   text-shadow: 5px 1px 10px rgba(68, 46, 46, 0.1);
+}
+
+.contact-info {
+  text-align: left;
+  margin-left: 20%;
+  margin-top: 100px;
+}
+
+.email,
+.linkedin,
+.instagram {
+  margin-bottom: 40px;
 }
 
 @media (min-width: 992px) {
@@ -293,11 +329,15 @@ footer {
     padding: 0 50px;
     margin-top: 100px;
   }
+
+  .contact-info {
+    margin-left: 30%;
+  }
 }
 
 @media (max-width: 992px) {
   #homepage header {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   #homepage main {
@@ -411,12 +451,8 @@ footer {
 }
 
 @media (max-width: 576px) {
-  #homepage header {
-    margin-top: 10px;
-  }
-
   #homepage main {
-    margin-top: 7%;
+    margin-top: 0;
   }
 
   h1 {
@@ -426,6 +462,10 @@ footer {
   h1.about-title {
     margin-top: 20px;
     margin-bottom: 10px;
+  }
+
+  .body-homepage {
+    margin-bottom: 50px;
   }
 
   .main-navigation {
