@@ -24,9 +24,6 @@ body {
   background-repeat: no-repeat;
 }
 
-#homepage head {
-}
-
 nav {
   border-bottom: var(--secondary-color) solid 0.5px;
   margin: 10px 40px 0;
