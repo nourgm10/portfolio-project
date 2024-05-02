@@ -10,7 +10,7 @@ body {
   position: relative;
   width: 100%;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 10px;
   background: radial-gradient(
       50% 50% at 50% 50%,
       rgba(20, 73, 72, 0.7) 0%,
@@ -26,6 +26,7 @@ body {
 nav {
   border-bottom: var(--secondary-color) solid 0.5px;
   margin: 10px 80px 0;
+  margin: 0 auto;
 }
 
 nav li {
@@ -91,6 +92,10 @@ h2 {
   font-size: 40px;
   line-height: 1;
   letter-spacing: 4px;
+}
+
+h1.about-title {
+  font-size: 60px;
 }
 
 .description {
@@ -184,6 +189,11 @@ footer {
   border-color: var(--secondary-color) !important;
 }
 
+.about-section {
+  margin: 40px 0;
+  padding: 0 100px;
+}
+
 @media (max-width: 1600px) {
   .blank-space {
     height: 60px;
@@ -211,6 +221,10 @@ footer {
     font-size: 70px;
   }
 
+  h1.about-title {
+    font-size: 50px;
+  }
+
   h2 {
     font-size: 48px;
   }
@@ -224,6 +238,10 @@ footer {
     text-align: center;
     justify-content: center;
     padding: 0;
+  }
+
+  .about-section {
+    margin-top: 30px;
   }
 
   hr {
@@ -248,8 +266,13 @@ footer {
 
 @media (max-width: 576px) {
   h1 {
-    padding-top: 10px;
+    padding-top: 20px;
     font-size: 50px;
+  }
+
+  h1.about-title {
+    font-size: 30px;
+    margin-top: 20px;
   }
 
   h2 {
@@ -265,6 +288,13 @@ footer {
     text-align: center;
     justify-content: center;
     margin: 0 50px;
+  }
+
+  .about-section {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 4%;
   }
 
   hr {
